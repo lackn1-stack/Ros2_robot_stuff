@@ -18,7 +18,7 @@ class Ebreak(Node):
         #AND WHERE THE CAR WAS BEFORE
         self.odom_sub = self.create_subscription(
             Odometry,
-            '/ego_racecar/odom',
+            '/odom',
             self.scan_callback,
             10
         )
